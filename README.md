@@ -3,14 +3,16 @@ Cypress Test Automation - Ambiente de Configuração
 
 Este repositório contém a configuração do ambiente de testes automatizados utilizando Cypress. A seguir estão as configurações e variáveis de ambiente que são usadas durante os testes.
 
-Configuração do Ambiente
+Configuração do Ambiente:
+
 O arquivo de configuração principal é o cypress.config.js. Ele define o ambiente de teste e as variáveis de ambiente necessárias para a execução dos testes automatizados.
 
-Variáveis de Ambiente
+Variáveis de Ambiente:
+
 As variáveis de ambiente são configuradas dentro do arquivo cypress.config.js e são usadas em todo o processo de automação. As variáveis incluem informações de login, dados de pagamento e URL do site de teste.
 
-javascript
-Copiar código
+javascript:
+
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
@@ -32,7 +34,7 @@ module.exports = defineConfig({
   }
 });
 
-Descrição das Variáveis de Ambiente
+Descrição das Variáveis de Ambiente:
 
 email: Email de login usado para autenticação.
 senha: Senha correspondente ao email para o login.
@@ -44,26 +46,27 @@ ano: Data do cartão (ano).
 nome: Nome do titular do cartão.
 cpf: CPF do titular do cartão.
 
-Requisitos
+Requisitos:
 
-Node.js: Certifique-se de ter o Node.js instalado no seu ambiente. Você pode baixar a versão mais recente aqui.
+Node.js:
 
-Cypress: Este projeto utiliza Cypress para automação de testes. Caso ainda não tenha o Cypress instalado, você pode instalar executando o seguinte comando:
+ Certifique-se de ter o Node.js instalado no seu ambiente. Você pode baixar a versão mais recente aqui.
 
-bash
-Copiar código
+Cypress: 
+
+Este projeto utiliza Cypress para automação de testes. Caso ainda não tenha o Cypress instalado, você pode instalar executando o seguinte comando:
+
 npm install cypress --save-dev
-Executando os Testes
+
+Executando os Testes:
 Para rodar os testes automatizados com Cypress:
 
 Instale as dependências do projeto:
 
-bash
-Copiar código
 npm install
+
 Para rodar os testes no ambiente de desenvolvimento, execute:
 
-bash
-Copiar código
 npx cypress open
+
 A interface gráfica do Cypress será aberta, permitindo que você escolha os testes a serem executados.
